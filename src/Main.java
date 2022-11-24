@@ -14,7 +14,12 @@ public class Main {
         System.out.println("Разность : " + VResult);
         VResult =  firstNumber*secondNumber;
         System.out.println("Произведение : " + VResult);
-        double quotient = (double) firstNumber/secondNumber;
-        System.out.println("Частное : " + quotient);
+        if (secondNumber != 0)
+        {
+            double quotient = (double) firstNumber / secondNumber;
+            System.out.println("Частное : " + quotient);
+        }
+            else
+        System.out.println("Частное : " + "при делении на ноль не определено");
     }
 }
